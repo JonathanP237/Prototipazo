@@ -100,7 +100,7 @@ function CTA() {
           whileTap={{ scale: 0.95 }}
           className="px-8 py-4 bg-blue-600 rounded-xl cursor-pointer"
         >
-          Firma
+          Figma
         </motion.button>
       </a>
     </div>
