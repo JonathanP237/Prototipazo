@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from "../../components/Navbar";
 
@@ -65,8 +64,6 @@ export default function Phase3Theory() {
         </Card>
 
       </section>
-
-      <CTA />
     </div>
   );
 }
@@ -80,18 +77,3 @@ function Card({ title, children }) {
   );
 }
 
-function CTA() {
-  return (
-    <div className="pb-24 flex justify-center">
-      <Link to="/phase3/simulator">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-8 py-4 bg-blue-600 rounded-xl cursor-pointer"
-        >
-          Ir al Simulador
-        </motion.button>
-      </Link>
-    </div>
-  );
-}

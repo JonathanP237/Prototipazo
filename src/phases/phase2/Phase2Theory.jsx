@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from "../../components/Navbar";
 
@@ -91,15 +90,19 @@ function Card({ title, children }) {
 function CTA() {
   return (
     <div className="pb-24 flex justify-center">
-      <Link to="/phase2/simulator">
+      <a
+        href="https://www.figma.com/proto/Hyqd9E83C7NpSxDK76LRFq/HEARTSENSE?node-id=332-104&t=0Y7hMiwoTAcYku2h-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-4 bg-blue-600 rounded-xl cursor-pointer"
         >
-          Ir al Simulador
+          Firma
         </motion.button>
-      </Link>
+      </a>
     </div>
   );
 }
