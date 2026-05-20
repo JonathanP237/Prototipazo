@@ -18,7 +18,7 @@ import Phase3 from "../phases/phase3/Phase3";
 export default function AppRouter() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
 
       <Routes>
 
