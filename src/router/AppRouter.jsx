@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route }
+import { HashRouter, Routes, Route }
 from "react-router-dom";
 
 import Home from "../pages/Home";
@@ -18,7 +18,7 @@ import Phase3 from "../phases/phase3/Phase3";
 export default function AppRouter() {
 
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
 
       <Routes>
 
